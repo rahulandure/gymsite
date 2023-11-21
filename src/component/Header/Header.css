@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    filter: invert(1);
+    height:100px;
+    width:100px;
+}
+
+.header-menu {
+    list-style: none;
+    gap: 2rem;
+    display: flex;
+    color:white;
+    padding-right: 56px;
+    padding-top: 20px;
+}
+
+.header-menu li {
+    cursor: pointer;
+}
+.header-menu li:hover {
+    cursor: pointer;
+    color:var(--orange);
+}
+
+@media screen and (max-width:768px) {
+    .header>:nth-child(2) {
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+
+    .header-menu {
+        background-color: var(--appColor);
+        flex-direction: column;
+        padding: 2rem;
+    }
+}
